@@ -17,14 +17,14 @@ class Doctor
       app.doctor == self
     end
   end
-  
+
   def new_appointment(date, patient)
     Appointment.new(date, patient, self)
   end
-  #
-  # def patients
-  #   self.appointments.collect do |app|
-  #     app.patient
-  #   end
-  # end
+
+  def patients
+    self.appointments.collect do |app|
+      app.patient
+    end
+  end
 end
