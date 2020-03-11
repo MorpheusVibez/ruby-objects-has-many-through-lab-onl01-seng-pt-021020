@@ -16,7 +16,7 @@ class Doctor
     Appointment.all.find_all {|app| app.doctor == self}
   end
 
-  def new_appointment(date, patient)
+  def new_appointment(patient, date)
     Appointment.new(date, patient, self)
   end
 
