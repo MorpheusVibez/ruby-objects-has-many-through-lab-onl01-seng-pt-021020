@@ -1,5 +1,5 @@
 class Doctor
-  attr_reader :name, :appointment
+  attr_reader :name
   @@all = []
 
   def self.all
