@@ -21,8 +21,6 @@ class Doctor
   end
 
   def patients
-    # self.appointments.collect do |app|
-    #   app.patient
-    # end
+    self.appointments.map {|app| app.patient}
   end
 end
