@@ -15,8 +15,6 @@ class Appointment
     @@all << self
   end
 
-  def patient
 
-  end
 
 end
