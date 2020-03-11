@@ -17,7 +17,7 @@ class Doctor
       app.doctor == self
     end
   end
-  #
+  
   def new_appointment(date, patient)
     Appointment.new(date, patient, self)
   end
