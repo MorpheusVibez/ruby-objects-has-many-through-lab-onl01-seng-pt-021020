@@ -21,10 +21,10 @@ class Patient
       app.patient == self
     end
   end
-  #
-  # def doctors
-  #   Appointment.all.select do |appointment|
-  #       appointment.doctor
-  #   end
-  # end
+
+  def doctors
+    Appointment.all.select do |appointment|
+        appointment.doctor
+    end
+  end
 end
